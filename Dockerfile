@@ -7,4 +7,5 @@ RUN wget https://repo1.maven.org/maven2/com/github/magese/ik-analyzer/7.7.1/ik-a
     cd /tmp/ && \
     tar xzvf log4j.tgz && \
     cp /tmp/apache-log4j-2.15.0-bin/log4j-core-2.15.0.jar /tmp/apache-log4j-2.15.0-bin/log4j-api-2.15.0.jar /tmp/apache-log4j-2.15.0-bin/log4j-1.2-api-2.15.0.jar /tmp/apache-log4j-2.15.0-bin/log4j-slf4j-impl-2.15.0.jar /opt/solr/server/lib/ext/ && \
-    rm -rf  /tmp/apache-log4j-2.15.0-bin && rm /tmp/log4j.tgz
+    rm -rf  /tmp/apache-log4j-2.15.0-bin && rm /tmp/log4j.tgz && \
+    cp -r /opt/solr/server/solr /opt/solr/server/solr-orig
