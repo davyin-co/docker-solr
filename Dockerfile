@@ -1,5 +1,5 @@
 FROM solr:7
-ENV LOG4J2_VERSION=2.17.0
+ENV LOG4J2_VERSION=2.17.1
 ADD drupal-solr-config/7.x /opt/solr/server/solr/configsets/drupal/conf
 RUN wget https://repo1.maven.org/maven2/com/github/magese/ik-analyzer/7.7.1/ik-analyzer-7.7.1.jar -O /opt/solr/server/solr-webapp/webapp/WEB-INF/lib/ik-analyzer-7.7.1.jar && \
     rm -rf /opt/solr/contrib/prometheus-exporter /opt/solr/licenses && \
